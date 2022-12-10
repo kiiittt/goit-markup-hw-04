@@ -227,6 +227,50 @@ h4 {
   line-height: 24px;
 }
 
+.strategy::before{
+content: "";  
+display: block;
+background-image: url(../images/antenna.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+height: 64px;
+margin-bottom: 24px;
+}
+
+.punctuality::before{
+  content: "";  
+  display: block;
+  background-image: url(../images/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 64px;
+  margin-bottom: 24px;
+  }
+
+.diligence::before{
+    content: "";  
+    display: block;
+    background-image: url(../images/diagram.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 64px;
+    margin-bottom: 24px;
+    }
+
+.technologies::before{
+      content: "";  
+      display: block;
+      background-image: url(../images/astronaut.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 64px;
+      margin-bottom: 24px;
+      }
+
 img {
   display: block;
 }
@@ -303,12 +347,56 @@ img {
   line-height: 24px;
 }
 
+
 .text-team {
   margin: 0px;
   color: var(--SubtleText);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.team-svg{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--PrimaryBrand);
+  border-radius: 50%;
+  border: 0;
+  fill: #fff;
+}
+
+.team-icon{
+border: 0;
+cursor: pointer;
+padding-left: 0;
+padding-right: 0;
+}
+
+li.team-icon{
+height: 40px;
+}
+
+.icons-team{
+padding-left: 16px;
+padding-right: 16px;
+padding-bottom: 36px;
+}
+
+.list-svg{
+display: flex;
+justify-content: center;
+padding-left: 0;
+}
+
+.team-icon:not(:last-child):not(:last-child){
+margin-right: 24px;
+}
+
+.team-svg:not(:last-child){
+padding-right: 24px;
 }
 
 .footer {
