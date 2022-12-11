@@ -362,7 +362,7 @@ img {
   background-position: center;
   background-size: contain;
   border: 0;
-  fill: #fff;
+  fill: currentColor;
 }
 
 .team-icon {
@@ -376,6 +376,7 @@ img {
   padding: 0;
   background-color: var(--PrimaryBrand);
   border-radius: 50%;
+  color: var(--Light);
 }
 
 .icons-team {
@@ -503,6 +504,7 @@ img {
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  color: var(--Light);
 }
 
 .media-btn:hover {
@@ -516,7 +518,7 @@ img {
   background-position: center;
   background-size: contain;
   border: 0;
-  fill: #fff;
+  fill: currentColor;
 }
 
 .section-portfolio {
