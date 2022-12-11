@@ -414,6 +414,7 @@ img {
 }
 
 .btn-customers {
+  padding: 0;
   height: 88px;
   width: 168px;
   border: 1px solid #8e8f99;
