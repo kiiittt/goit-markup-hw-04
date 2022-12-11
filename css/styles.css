@@ -366,14 +366,16 @@ img {
 }
 
 .team-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 0;
   cursor: pointer;
   padding: 0;
-  background-color: var(--PrimaryBrand);  
+  background-color: var(--PrimaryBrand);
   border-radius: 50%;
-  padding-left: 12px;
 }
 
 .icons-team {
@@ -396,41 +398,41 @@ img {
   padding-right: 24px;
 }
 
-.customers{
-padding-top: 120px;
-padding-bottom: 120px;
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.customers-list{
-display: flex;
-margin: 0;
-padding: 0;
+.customers-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.li-customers:not(:last-child){
-margin-right: 24px;
+.li-customers:not(:last-child) {
+  margin-right: 24px;
 }
 
-.btn-customers{
-height: 88px;
-width: 168px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-cursor: pointer;
+.btn-customers {
+  height: 88px;
+  width: 168px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.btn-customers:hover{
+.btn-customers:hover {
   border: 1px solid #4d5ae5;
 }
 
-.svg-customers{
-height: 56px;
-width: 154px;
-fill: var(--SubtleText);
+.svg-customers {
+  height: 56px;
+  width: 154px;
+  fill: var(--SubtleText);
 }
 
-.svg-customers:hover{
-fill: var(--PrimaryBrand);
+.svg-customers:hover {
+  fill: var(--PrimaryBrand);
 }
 
 .footer {
@@ -439,9 +441,9 @@ fill: var(--PrimaryBrand);
   padding-bottom: 100px;
 }
 
-.container.footer{
-display: flex;
-padding: 0;
+.container.footer {
+  display: flex;
+  padding: 0;
 }
 
 .studio-footer {
@@ -464,45 +466,49 @@ padding: 0;
   line-height: 24px;
 }
 
-.social-media{
-padding-left: 120px;
+.social-media {
+  padding-left: 120px;
 }
 
-.media-item{
+.media-item {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.list-media{
-display: flex;
-padding: 0;
-margin: 0;
+.list-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.li-media:not(:last-child){
+.li-media:not(:last-child) {
   padding-right: 24px;
 }
 
-.media-btn{
+.media-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border: 0;
   cursor: pointer;
   padding: 0;
-  background: rgba(255, 255, 255, 0.1);  
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  padding-left: 9px;
 }
 
-.media-btn:hover{
-background: #31D0AA;
+.media-btn:hover {
+  background: #31d0aa;
 }
 
-.media-svg{
+.media-svg {
   display: block;
   height: 24px;
   width: 24px;
