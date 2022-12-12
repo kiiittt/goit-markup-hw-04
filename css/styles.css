@@ -190,18 +190,19 @@ h4 {
 }
 
 .advantages {
+  margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
   padding-left: 0px;
   margin: 0;
+  margin-right: 0;
 }
 
-.advantages-list :not(:last-child) {
+.advantages-list>li :not(:last-child) {
   margin-right: 24px;
 }
 
@@ -213,6 +214,7 @@ h4 {
 }
 
 .header-list {
+  margin-top: 24px;
   margin-bottom: 8px;
   color: var(--TextColor);
   font-weight: 500;
@@ -228,7 +230,20 @@ h4 {
   line-height: 24px;
 }
 
-.strategy::before {
+.strategy{
+margin-right: 0;
+}
+
+.strategy-svg{
+  height: 112px;
+  width: 264px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;  
+  background-color: var(--Accent); 
+}
+
+.strategy-svg::before{
   content: "";
   display: block;
   background-image: url(../images/antenna.svg);
@@ -236,11 +251,18 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   height: 64px;
-  margin-bottom: 24px;
-  background-color: var(--Accent);
+
 }
 
-.punctuality::before {
+.punctuality-svg{
+  height: 112px;
+  width: 264px;
+  padding-top: 24px;
+  padding-bottom: 24px;  
+  background-color: var(--Accent); 
+}
+
+.punctuality-svg::before {
   content: "";
   display: block;
   background-image: url(../images/clock.svg);
@@ -248,11 +270,18 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   height: 64px;
-  margin-bottom: 24px;
   background-color: var(--Accent);
 }
 
-.diligence::before {
+.diligence-svg{
+  height: 112px;
+  width: 264px;
+  padding-top: 24px;
+  padding-bottom: 24px;  
+  background-color: var(--Accent); 
+}
+
+.diligence-svg::before {
   content: "";
   display: block;
   background-image: url(../images/diagram.svg);
@@ -260,11 +289,18 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   height: 64px;
-  margin-bottom: 24px;
   background-color: var(--Accent);
 }
 
-.technologies::before {
+.technologies-svg{
+  height: 112px;
+  width: 264px;
+  padding-top: 24px;
+  padding-bottom: 24px;  
+  background-color: var(--Accent); 
+}
+
+.technologies-svg::before {
   content: "";
   display: block;
   background-image: url(../images/astronaut.svg);
@@ -272,7 +308,6 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   height: 64px;
-  margin-bottom: 24px;
   background-color: var(--Accent);
 }
 
