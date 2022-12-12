@@ -149,7 +149,7 @@ h4 {
 }
 
 .hero {
-  display: inline-block;
+  display: flex;
   text-align: center;
   background-color: var(--DarkColor);
   background-size: cover;
@@ -161,7 +161,8 @@ h4 {
   background-position: center;
   padding-top: 192px;
   padding-bottom: 192px;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .hero-title {
@@ -241,7 +242,7 @@ h4 {
 .punctuality::before {
   content: "";
   display: block;
-  background-image: url(../images/vector.svg);
+  background-image: url(../images/clock.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -357,8 +358,6 @@ img {
 
 .team-svg {
   display: block;
-  height: 16px;
-  width: 16px;
   background-position: center;
   background-size: contain;
   border: 0;
@@ -369,8 +368,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -389,6 +388,11 @@ img {
   display: flex;
   justify-content: center;
   padding-left: 0;
+}
+
+.li-team{
+  height: 40px;
+  width: 40px;  
 }
 
 .li-team:not(:last-child):not(:last-child) {
@@ -410,30 +414,39 @@ img {
   padding: 0;
 }
 
+.li-customers {
+  height: 88px;
+  width: 168px;
+}
+
 .li-customers:not(:last-child) {
   margin-right: 24px;
 }
 
-.btn-customers {
+.a-customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  height: 88px;
-  width: 168px;
+  height: 100%;
+  width: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.btn-customers:hover {
-  border: 1px solid #4d5ae5;
-}
-
-.svg-customers {
-  height: 56px;
-  width: 154px;
   fill: var(--SubtleText);
 }
 
-.svg-customers:hover {
+.a-customers:hover {
+  border: 1px solid #4d5ae5;
+  fill: var(--PrimaryBrand);
+}
+
+.a-customers:focus {
+  border: 1px solid #4d5ae5;
+  fill: var(--PrimaryBrand);
+}
+
+.li-customers:hover {
   fill: var(--PrimaryBrand);
 }
 
@@ -489,16 +502,21 @@ img {
   margin: 0;
 }
 
+.li-media {
+  height: 40px;
+  width: 40px;
+}
+
 .li-media:not(:last-child) {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
 .media-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -511,10 +529,13 @@ img {
   background: #31d0aa;
 }
 
+.media-btn:focus {
+  background: #31d0aa;
+}
+
 .media-svg {
   display: block;
-  height: 24px;
-  width: 24px;
+
   background-position: center;
   background-size: contain;
   border: 0;
@@ -587,7 +608,12 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.works-card:hover {
+.link-portfolio {
+  display: block;
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
