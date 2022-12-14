@@ -320,7 +320,7 @@ img {
 }
 
 .our-team {
-  background-color: #f4f4fd;
+  background-color: var(--Light);
   padding-bottom: 120px;
   padding-top: 120px;
 }
